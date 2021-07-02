@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CreerHeroComponent } from './creer-hero/creer-hero.component';
 
 const routes: Routes = [];
 

@@ -1,0 +1,8 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>pseudo</label><input type="text" [formControl]="fPseudo"/><br>
+    <label>nom</label><input type="text" [formControl]="fNom"/><br>
+    <label>prenom</label><input type="text" [formControl]="fPrenom"/><br>
+    <input type="radio" formControlName="estVilain" value=true> vilain<br>
+    <input type="radio" formControlName="estVilain" value=false> gentil<br>
+    <button type="submit" [disabled]="!form.valid">Créer </button>
+</form>
